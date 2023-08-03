@@ -115,7 +115,7 @@ body {
   background-color: #42b72a; /* Green background color for the heading */
   color: #fff; /* Text color for the heading */
   padding: 5px 10px;
-  width: 95%;
+  width: 96%;
   font-size: 14px;
   z-index: 1; /* Ensure the heading appears on top */
 }
