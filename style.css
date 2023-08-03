@@ -24,6 +24,13 @@ body {
   padding-top: 70px;
   align-items: center;
 }
+.image-card{
+  width: 250px;
+  height: 100%;
+}
+.image-card img{
+  width: 100%;
+}
 
 .pricing-card {
   border: 1px solid #ccc;
@@ -263,8 +270,8 @@ body {
   }
   
   .carousel .card {
-    scroll-snap-align: start;
-    height: 280px;
+    scroll-snap-align: center;
+    /* height: 280px; */
     list-style: none;
     background: #fff;
     cursor: pointer;
@@ -401,6 +408,16 @@ body {
   
   .request-btn:focus {
     outline: none;
+  }
+  @media (max-width: 1024px), (max-height: 800px) {
+    /* Hide the whole section for screen sizes 1024x800 and below */
+    .our-customers-section {
+      display: none;
+    }
+    p {
+      font-size: 14px; /* Increase the font size for the paragraph */
+      padding: 14px 0; /* Add some padding at the top and bottom of the paragraph */
+    }
   }
   @media screen and (max-width: 768px) {
     .pricing-container {
